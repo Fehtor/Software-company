@@ -1,0 +1,89 @@
+.cover-page{
+    height: 100vh;
+    background-image: url(../img/florian-wehde-3jnbdgJcAmk-unsplash\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.cover-page header{
+    width: 82vw;
+    border-radius: 9px;
+    background-color: aliceblue;
+    height: 11vh;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+
+}
+
+.shadow{
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color:  #161515e7;
+    z-index: -1;
+    border-radius: 0 50px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.shadow p{
+    width: 44vw;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1%;
+    line-height: 81px;
+    position: relative;
+    z-index: 3;
+}
+
+.nav-item{
+    letter-spacing: 1%;
+    font-size: 1vw;
+    font-family: 'Outfit', sans-serif;
+}
+
+.green{
+    color: #60ce70;
+}
+
+.company-name{
+    font-family: 'Inter', sans-serif;
+    font-size: 29px;
+    letter-spacing: 3%;
+}
+
+.group{
+    position: absolute;
+    z-index: -2;
+}
+
+.lines-1{
+    top: -75px;
+    left: 170px;
+    width: 100vw;
+}
+
+.lines-2{
+    top: 400px;
+    left: 0;
+    width: 76vw;
+}
