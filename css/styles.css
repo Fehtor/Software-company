@@ -114,32 +114,29 @@ header nav{
     height: 3vw;
 }
 
-.about-us-pictures{
-    display: flex;
+.about-us-pictures div{
+    display: inline-block;
 }
 
-.about-us-pictures section:nth-child(1){
+.about-us-pictures div:nth-child(1){
     background-image: url(../img/jason-goodman-Oalh2MojUuk-unsplash\ 3\ \(1\).png);
     width: 321px;
     height: 333px;
-    margin: 17vh 0px 17vh 16vw;
+    border-radius: 10px;
+    margin: 17vh 0vh 0vh 16vw;
 }
 
-.about-us-pictures section:nth-child(2){
-    height: 17vh;
-    margin: 11vh 0vh 11vh 0.6vw;
-}
-
-.about-us-pictures section:nth-child(2) div:nth-child(1){
+.about-us-pictures  div:nth-child(2){
     background-image: url(../img/jason-goodman-Oalh2MojUuk-unsplash\ 3\ \(1\).png);
     width: 321px;
     height: 292px;
     background-position: -330px 0px;
     margin-bottom: 1vh;
     border-radius: 10px;
+    margin: 11vh 0vh 0vh 0.6vw;
 }
 
-.about-us-pictures section:nth-child(2) div:nth-child(2){
+.about-us-pictures  div:nth-child(3){
     background-image: url(../img/jason-goodman-Oalh2MojUuk-unsplash\ 3\ \(1\).png);
     width: 321px;
     height: 132px;
