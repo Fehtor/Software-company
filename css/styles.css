@@ -114,15 +114,21 @@ header nav{
     height: 3vw;
 }
 
+.about-us-main {
+    display: flex;
+    position: relative;
+}
+
 .about-us-pictures{
     display: flex;
 }
 
-.about-us-pictures section:nth-child(1){
+.about-us-pictures section:nth-child(1) div{
     background-image: url(../img/jason-goodman-Oalh2MojUuk-unsplash\ 3\ \(1\).png);
     width: 321px;
     height: 333px;
     margin: 17vh 0px 17vh 16vw;
+    border-radius: 10px;
 }
 
 .about-us-pictures section:nth-child(2){
@@ -147,3 +153,30 @@ header nav{
     border-radius: 10px;
 }
 
+.about-us-text{
+    width: 28vw;
+    margin: 28vh 12vw 0px 2vw;
+    height: 24vh;
+}
+
+.about-us-text h1{
+    margin-bottom: 1.3vh;
+    font-size: 4.3vh;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: #24a556;
+}
+
+.about-us-text p{
+    font-size: 2vh;
+    line-height: 4vh;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+.cells{
+    position: absolute;
+    top: 6vh;
+    right: 29vw;
+    width: 12vw;
+}
