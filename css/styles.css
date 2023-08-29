@@ -228,7 +228,12 @@ header nav{
     top: -5px;
     border-radius: 0px 0px 10px 10px;
     overflow: hidden;
-    z-index: -1;
+    transition-duration: 0.3s;
+}
+
+.card:hover .lower-part{
+    background-color: #3f3f3f;
+    transition-duration: 0.3s;
 }
 
 .lower-part-vector{
@@ -236,7 +241,24 @@ header nav{
     position: absolute;
     bottom: 24%;
     left: 7%;
-    z-index: -1;
+}
+
+.green-vector{
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    left: 43%;
+    opacity: 0;
+}
+
+.card:hover .lower-part-vector{
+    opacity: 0;
+    transition-duration: 0.15s;
+}
+
+.card:hover .green-vector{
+    opacity: 1;
+    transition-duration: 0.15s;
 }
 
 .card-footer{
@@ -260,6 +282,10 @@ header nav{
     width: 268px;
 }
 
+.card:hover .card-title{
+    color: #fff;
+}
+
 .tags{
     display: flex;
     width: 100%;
@@ -281,7 +307,7 @@ header nav{
 
  .offer{
     color: #fff;
-    border-bottom: 1px solid #6D6D6D;
+    border-bottom: 2px solid #6D6D6D;
     padding: 3vh;
     font-family: 'Outfit', sans-serif;
     font-size: 3vh;
@@ -318,7 +344,7 @@ header nav{
  }
 
 .last-offer{
-    border-bottom: 1px solid #3f3f3f;
+    border-bottom: 0px solid #3f3f3f;
 }
  
 .arrow-1{
@@ -334,4 +360,50 @@ header nav{
     position: absolute;
     left: 14vw;
     opacity: 0.4;
+}
+
+.visit-button{
+    background-color: #3f3f3f;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+
+.card:hover .visit-button{
+    background-color: #24A556;
+    transition-duration: 0.3s;
+}
+
+.hover-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #60ce70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background-color: #3f3f3f;
+}
+
+.offers-star{
+    position: absolute;
+    left: 20px;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.offers-arrow{
+    position: absolute;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
 }
