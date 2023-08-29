@@ -121,19 +121,28 @@ header nav{
 
 .about-us-pictures{
     display: flex;
+    transform: scale(1.2);
+    position: relative;
+    left: -120px;
+    margin: 17vh 0px 11vh 16vw;
+    justify-content: space-between;
+    width: 654px;
 }
+
+/* разобраться с маржинами */
 
 .about-us-pictures section:nth-child(1) div{
     background-image: url(../img/jason-goodman-Oalh2MojUuk-unsplash\ 3\ \(1\).png);
     width: 321px;
     height: 333px;
-    margin: 17vh 0px 17vh 16vw;
     border-radius: 10px;
 }
 
 .about-us-pictures section:nth-child(2){
-    height: 17vh;
-    margin: 11vh 0vh 11vh 0.6vw;
+    height: 436px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .about-us-pictures section:nth-child(2) div:nth-child(1){
@@ -141,7 +150,6 @@ header nav{
     width: 321px;
     height: 292px;
     background-position: -330px 0px;
-    margin-bottom: 1vh;
     border-radius: 10px;
 }
 
@@ -179,4 +187,151 @@ header nav{
     top: 6vh;
     right: 29vw;
     width: 12vw;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 65vw;
+}
+
+.card{
+    width: 390px;
+    height: 533px;
+}
+
+.upper-part{
+    background-image: url('../img/Rectangle\ 21840.png');
+    width: 100%;
+    height: 63%;
+    background-size: cover;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
+
+.upper-part-gradient{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 59%, rgba(255,255,255,0.44021358543417366) 78%, rgba(255,255,255,0.8631827731092436) 100%);
+    height: 100%;
+    width: 100%; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.lower-part{
+    height: 32%;
+    width: 100%;
+    background-color: rgb(189, 189, 189);
+    position: relative;
+    top: -5px;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.lower-part-vector{
+    width: 80%;
+    position: absolute;
+    bottom: 24%;
+    left: 7%;
+    z-index: -1;
+}
+
+.card-footer{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-footer section{
+    z-index: 1;
+}
+
+.card-title{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 24px;
+    color: #3f3f3f;
+    width: 268px;
+}
+
+.tags{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+.tag{
+    padding: 5px 12px;
+    background-color: #fff;
+    font-size: 17px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    margin: 0px 5px;
+    border-radius: 5px;
+    letter-spacing: 2%;
+    color: #3f3f3f;
+}
+
+ .offer{
+    color: #fff;
+    border-bottom: 1px solid #6D6D6D;
+    padding: 3vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 3vh;
+    font-weight: 500;
+ }
+
+ .offers{
+    width: 82vw;
+    height: 53vh;
+    background-color: #3f3f3f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+ }
+
+ .offers header h1{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: #D7D7D7;
+    font-size: 7vh;
+    position: relative;
+    left: 8vw;
+ }
+
+ .offers section{
+    width: 33vw;
+ }
+
+ .no-clicked-offer{
+    color: #6D6D6D;
+ }
+
+.last-offer{
+    border-bottom: 1px solid #3f3f3f;
+}
+ 
+.arrow-1{
+    position: absolute;
+    left: 18vw;
+    top: 16vh;
+    width: 45vw;
+    height: 24vh;
+}
+
+.silk{
+    height: 100%;
+    position: absolute;
+    left: 14vw;
+    opacity: 0.4;
 }
