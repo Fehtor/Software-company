@@ -1,0 +1,60 @@
+body{
+    background-image: url(../img/Desktop_-_1_3.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-wrapper{
+    height: 80vh;
+    width: 40vw;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5vw 0px 0px 5vw;
+    position: relative;
+}
+
+.form-wrapper h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.form-wrapper input{
+    margin-bottom: 20px;
+    width: 70%;
+    padding: 0px 0px 10px 5px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #929292;
+}
+
+.checkbox input{
+    width: auto;
+}
+
+.checkbox label{
+    font-size: 18px;
+}
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.form-wrapper button{
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3BADCD;
+    position: absolute;
+    bottom: 100px;
+    left: 120px;
+    color: #fff;
+}

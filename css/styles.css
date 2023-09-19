@@ -549,3 +549,210 @@ header nav{
     width: 92%;
     transform: scale(1.1);
  }
+
+ .featured-cards{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 127vh;
+    margin-top: 100px;
+    position: relative;
+ }
+
+ .featured-cards-header{
+    color: #24a556;
+    font-weight: 600;
+    font-size: 58px;
+    font-family: 'Outfit', sans-serif;
+    align-self: flex-start; 
+    margin-left: 200px;   
+ }
+
+ .featured-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 81vw;
+    height: 112vh;
+    justify-content: space-between;
+ }
+
+ .feature-card{
+    background-color: black;
+    width: 40vw;
+    height: 54vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 60px;
+ }
+
+ .feature-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21vh;
+ }
+
+ .date{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #949292
+ }
+
+ .feature-card-content-title{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff;
+ }
+
+ .feature-card-content-text{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #535353
+ }
+
+ .feature-card-footer-readmore{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    transition-duration: 0.3s;
+ }
+
+ .feature-card:hover .feature-card-footer-readmore{
+    color: #24A556;
+    transition-duration: 0.3s;
+    cursor: pointer;
+ }
+
+ .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 200px;
+    margin-top: 100px;
+    height: 60vh;
+    width: 80vw;
+    position: relative;
+ }
+
+ .form header {
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+ }
+ .form header h1{
+    font-weight: 600;
+    font-size: 58px;
+    color: #24A556;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.form header p{
+    color: #3f3f3f;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Orbitron', sans-serif;
+}
+
+ .form-chapter{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+ }
+
+ .form-chapter div{
+    
+    border-radius: 64px;
+    padding: 20px;
+    color: #3F3F3F;
+    border: 1px solid #3F3F3F;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+ }
+
+ .form-chapter div:nth-child(1){
+    border: 0px solid #fff;
+    background-color: #3F3F3F;
+    color: #fff;
+ }
+
+ .form-form{
+    margin-top: 100px;
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+ }
+
+ .form-form form{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ .form-form input, .form-form textarea{
+    border-bottom: 1px solid #3F3F3F;
+    width: 100%;
+    font-weight: 400;
+    font-family: 'Orbitron', sans-serif;
+    color: #3F3F3F;
+    padding-bottom: 2px;
+ }
+
+ .form-form textarea{
+    resize: none;
+ }
+
+ .form-form form button{
+    background-color: #24A556;
+    width: 6vw;
+    height: 5vh;
+    border-radius: 60px;
+    box-shadow: 2px 2px 0px 1px #3F3F3F;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+ }
+
+ .form-contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    height: 120px;
+ }
+
+ .form-contacts-telephone, .form-contacts-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ .form-contacts-telephone p, .form-contacts-email p{
+    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
+    color: #3F3F3F;
+ }
+
+ .form-contacts-telephone p:nth-child(1), .form-contacts-email p:nth-child(1){
+    color: #898989;
+ }
+
+ .form img[src="img/cells.svg"]{
+    position: absolute;
+    right: 0;
+    top: 100px;
+ }
+
+
