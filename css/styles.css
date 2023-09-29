@@ -474,7 +474,7 @@ header nav{
 
  .boss-photo{
     position: relative;
-    bottom: 80px;
+    bottom: 103px;
     right: -45px;
     width: 140%;
  }
@@ -536,23 +536,23 @@ header nav{
  .gabriel-photo{
     
     position: relative;
-    bottom: 42px;
-    left: 12px;
+    bottom: 54px;
+    left: 15px;
     width: 100%;
     transform: scale(1.1);
  }
 
  .julian-photo{
     position: relative;
-    bottom: 102px;
-    left: 11px;
+    bottom: 135px;
+    left: 14px;
     width: 92%;
     transform: scale(1.1);
  }
 
  .featured-cards{
     display: flex;
-    width: 100vw;
+    width: 98vw;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -676,12 +676,13 @@ header nav{
     border: 1px solid #3F3F3F;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
+    cursor: pointer;
  }
 
- .form-chapter div:nth-child(1){
-    border: 0px solid #fff;
-    background-color: #3F3F3F;
-    color: #fff;
+ .form-chapter-active{
+    border: 0px solid #fff !important;
+    background-color: #3F3F3F !important;
+    color: #fff !important;
  }
 
  .form-form{
@@ -755,4 +756,76 @@ header nav{
     top: 100px;
  }
 
+.site-footer{
+    margin-top: 10vw;
+    width: 98vw;
+    height: 55vh;
+    padding: 10vh 8vw;
+    background-color: #24a556;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.site-footer-header{
+    color: #fff;
+    font-size: 2vw;
+    line-height: 0.8;
+    font-family: 'Orbitron', sans-serif;
+}
+.site-footer-header span{
+    font-size: 1.5vw;
+    letter-spacing: 5px;
+}
+
+.site-footer-content{
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    width: 100%;
+}
+
+.site-footer-text{
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+    line-height: 2;
+}
+
+.site-footer-links{
+    display: flex;
+    width: 39vw; 
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+
+.site-footer-links-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.site-footer-socwebs{
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Orbitron', sans-serif;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    
+    width: 250px;
+}
+
+img[src="img/facebook.svg"], img[src="img/instagram.svg"], img[src="img/twitter.svg"]{
+    width: 40px;
+    
+}
 
