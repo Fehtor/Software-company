@@ -44,7 +44,7 @@ header nav{
     position: absolute;
     left: 0;
     right: 0;
-    background-color:  #161515e7;
+    background-color:  #1615159f;
     z-index: -1;
     border-radius: 0 50px 0 0;
     display: flex;
@@ -146,38 +146,40 @@ header nav{
 /* разобраться с маржинами */
 
 .about-us-pictures section:nth-child(1) div{
-    background-image: url(../img/jason-goodman-Oalh2MojUuk-unsplash\ 3\ \(1\).png);
-    width: 321px;
-    height: 333px;
+    background-image: url(../img/Mask\ group.png);
+    width: 20vw;
+    height: 21vw;
     border-radius: 10px;
+    background-size: cover;
+    margin-right: 1vw;
 }
 
 .about-us-pictures section:nth-child(2){
-    height: 436px;
+    height: 27vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .about-us-pictures section:nth-child(2) div:nth-child(1){
-    background-image: url(../img/jason-goodman-Oalh2MojUuk-unsplash\ 3\ \(1\).png);
-    width: 321px;
-    height: 292px;
-    background-position: -330px 0px;
+    background-image: url(../img/Mask\ group\ \(1\).png);
+    width: 20vw;
+    height: 18vw;
     border-radius: 10px;
+    background-size: cover;
 }
 
 .about-us-pictures section:nth-child(2) div:nth-child(2){
-    background-image: url(../img/jason-goodman-Oalh2MojUuk-unsplash\ 3\ \(1\).png);
-    width: 321px;
-    height: 132px;
-    background-position: -330px -300px;
+    background-image: url(../img/Mask\ group\ \(2\).png);
+    width: 20vw;
+    height: 8vw;
     border-radius: 10px;
+    background-size: cover;
 }
 
 .about-us-text{
     width: 28vw;
-    margin: 28vh 12vw 0px 2vw;
+    margin: 40vh 0vw 0px 20vw;
     height: 24vh;
 }
 
@@ -199,7 +201,7 @@ header nav{
 .cells{
     position: absolute;
     top: 6vh;
-    right: 29vw;
+    right: 20vw;
     width: 12vw;
 }
 
@@ -224,8 +226,8 @@ header nav{
 }
 
 .card{
-    width: 390px;
-    height: 533px;
+    width: 19vw;
+    height: 29vw;
 }
 
 .upper-part{
@@ -303,10 +305,10 @@ header nav{
 .card-title{
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
-    line-height: 30px;
-    font-size: 24px;
+    line-height: 1.3vw;
+    font-size: 1.35vw;
     color: #3f3f3f;
-    width: 268px;
+    width: 16vw;
 }
 
 .card:hover .card-title{
@@ -766,6 +768,7 @@ header nav{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    position: relative;
 }
 
 .site-footer-header{

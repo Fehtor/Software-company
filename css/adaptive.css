@@ -1,0 +1,102 @@
+@media  screen and (max-width: 600px) {
+    .cover-page header, .shadow, .group{
+        display: none !important;
+    }
+
+    .cover-page-mobile{
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+    }
+
+    .cover-page-footer-shadow{
+        width: 100vw;
+        height: 30vw;
+        background-color: rgba(36, 32, 32, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 100;
+    }
+
+    .cover-page-footer-shadow p{
+        font-family: 'Outfit', sans-serif;
+        font-size: 10vw;
+        color: #fff;
+    }
+
+    .about-us{
+        display: none !important;
+    }
+
+    .about-us-mobile{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80vw;
+         margin-bottom: 100vw; /*убрать это */
+    }
+
+    .about-us-mobile header{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 100vw;
+        height: 20vw;
+    }
+
+    .about-us-text{
+        margin: 0;
+        width: 100vw;
+        margin-left: 2vw;
+        padding-right: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .about-us-text p{
+        font-size: 5vw;
+        text-align: justify;
+    }
+
+    .about-us-text h1{
+        margin: auto;
+    }
+
+
+    .logo{
+        height: 4.5vh;
+    }
+
+    .cards{
+        display: none !important;
+    }
+
+    .offers{
+        display: none;
+    }
+
+    .cards{
+        display: none;
+    }
+
+    .featured-cards{
+        display: none;
+    }
+
+    .form{
+        display: none;
+    }
+
+    .site-footer{
+        display: none;
+    }
+}
+
