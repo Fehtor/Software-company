@@ -31,3 +31,13 @@ typeMobileInput.addEventListener("click", TypeClick)
 typeWebsiteInput.addEventListener("click", TypeClick)
 typeProductInput.addEventListener("click", TypeClick)
 
+
+
+window.onload = () => {
+    let burgerBtn = document.querySelector("#burger-btn")
+    let burgerMenu = document.querySelector("#burger-menu")
+    burgerBtn.addEventListener("click", () => {
+        burgerBtn.classList.toggle("burger-active")
+        burgerMenu.classList.toggle("burger-menu-active");
+    })
+}

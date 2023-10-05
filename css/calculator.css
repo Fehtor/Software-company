@@ -29,7 +29,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-around;   
+    }
+
+    .numpad div{
+        height: 52px;
+        width: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .numpad-header{
