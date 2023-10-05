@@ -215,6 +215,10 @@ header nav{
     position: relative;
 }
 
+.burger-menu{
+    display: none;
+}
+
 .cards-header{
     color: #24a556;
     font-weight: 600;
@@ -830,5 +834,9 @@ header nav{
 img[src="img/facebook.svg"], img[src="img/instagram.svg"], img[src="img/twitter.svg"]{
     width: 40px;
     
+}
+
+.about-us-mobile{
+    display: NONE;
 }
 
