@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kameron&family=Karma:wght@300;400;600;700&family=Montserrat:wght@500&family=Orbitron:wght@400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="calculator-header">
@@ -16,45 +19,47 @@
     </header>
 
     <section class="calculate-place">
-
+        <p class="calculate-string" id="calculate-string"></p>
     </section>
 
     <section class="numpad">
         <header class="numpad-header">
-        <div><img src="img/AC.png" alt=""></div>
-        <div><img src="img/Group 6.png" alt=""></div>
-        <div><img src="img/Group 7.png" alt=""></div>
-        <div><img src="img/Group 8.png" alt=""></div>
+        <div id="num-btn" value="action-clear"><img src="img/AC.png" alt=""></div>
+        <div id="num-btn" value="action-percent"><img src="img/Group 6.png" alt=""></div>
+        <div id="num-btn" value="action-div"><img src="img/Group 7.png" alt=""></div>
+        <div id="num-btn" value="action-backspace"><img src="img/Group 8.png" alt=""></div>
         </header>
 
         <section class="numpad-content">
             <section class="line">
-                <div><img src="img/7.png" alt=""></div>
-                <div><img src="img/4.png" alt=""></div>
-                <div><img src="img/1.png" alt=""></div>
-                <div><img src="img/Group 17.png" alt=""></div>
+                <div id="num-btn" value="num-7"><img src="img/7.png" alt=""></div>
+                <div id="num-btn" value="num-4"><img src="img/4.png" alt=""></div>
+                <div id="num-btn" value="num-1"><img src="img/1.png" alt=""></div>
+                <div id="num-btn" value="action-flaw"><img src="img/Group 17.png" alt=""></div>
             </section>
             <section class="line">
-                <div><img src="img/8.png" alt=""></div>
-                <div><img src="img/5.png" alt=""></div>
-                <div><img src="img/2.png" alt=""></div>
-                <div><img src="img/0.png" alt=""></div>
+                <div id="num-btn" value="num-8" ><img src="img/8.png" alt=""></div>
+                <div id="num-btn" value="num-5" ><img src="img/5.png" alt=""></div>
+                <div id="num-btn" value="num-2"><img src="img/2.png" alt=""></div>
+                <div id="num-btn" value="num-0"><img src="img/0.png" alt=""></div>
 
             </section>
             <section class="line">
-                <div><img src="img/9.png" alt=""></div>
-                <div><img src="img/6.png" alt=""></div>
-                <div><img src="img/3.png" alt=""></div>
-                <div><img src="img/png.png" alt=""></div>
+                <div id="num-btn" value="num-9"><img src="img/9.png" alt=""></div>
+                <div id="num-btn" value="num-6" ><img src="img/6.png" alt=""></div>
+                <div id="num-btn" value="num-3"><img src="img/3.png" alt=""></div>
+                <div id="num-btn" value="num-."><img src="img/png.png" alt=""></div>
 
             </section>
             <section class="line">
-                <div><img src="img/x.png" alt=""></div>
-                <div><img src="img/-.png" alt=""></div>
-                <div><img src="img/+.png" alt=""></div>
-                <div><img src="img/Icon.png" alt=""></div>
+                <div id="num-btn" value="action-mul"><img src="img/x.png" alt=""></div>
+                <div id="num-btn" value="action-minus"><img src="img/-.png" alt=""></div>
+                <div id="num-btn" value="action-plus"><img src="img/+.png" alt=""></div>
+                <div id="num-btn" value="action-equally"><img src="img/Icon.png" alt=""></div>
             </section>
         </section>
     </section>
+
+    <script src="js/calc.js"></script>
 </body>
 </html>
