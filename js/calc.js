@@ -10,6 +10,10 @@ function debug() {
 
 function numClick(event){
     let value = event.currentTarget.getAttribute("value")
+    event.currentTarget.style.animationName = "button-click"
+    setTimeout((target) => {
+        target.style.animationName = "none"
+    }, 300, event.currentTarget)
     if(wasAction == true){
         str.innerHTML = ""
         wasAction = false
@@ -74,6 +78,7 @@ function numClick(event){
                         actionBuffer = ""
                         buffer = ""
                         debug()
+                        wasAction = false
                     }
                     break;
                 case "flaw":

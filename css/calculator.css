@@ -82,4 +82,53 @@
         height: 100%;
         align-items: center;
     }
+
+    #num-btn{
+        animation-duration: 0.3s;
+        border-radius: 50%;
+        animation-fill-mode: forwards; 
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-play-state: running;
+    } 
+
+    .calculator{
+        display: none;
+    }
+
+    .smth{
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .calculator header{
+        height: 10%;
+    }
+
+    .smth-main{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .column{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 15vw;
+    }
+    .icon p{
+        display: inline;
+        margin: 0;
+        font-size:  3vw;
+        font-family: 'Montserrat', sans-serif;
+    }
 }
