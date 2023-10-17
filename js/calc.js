@@ -3,6 +3,11 @@ let str = document.querySelector("#calculate-string")
 let buffer = ""
 let actionBuffer = ""
 let wasAction = false
+let calculator = document.querySelector(".calculator")
+let menu = document.querySelector(".menu")
+
+let curState = "calc"
+
 
 function debug() {
     console.log("buffer: " +  buffer +  "actionBuffer: " + actionBuffer)
@@ -146,3 +151,57 @@ function doAction(actionType){
 for(let i = 0; i < nums.length; i++){
     nums[i].addEventListener("click", numClick)
 }
+
+let calcBtn = document.querySelector("#calc-btn")
+let menuBtn = document.querySelector("#menu-btn")
+
+
+function touchStart(event){
+//    event.preventDefault()
+   startX = event.changedTouches[0]["screenX"]
+   console.log("touchStart")
+   console.log(startX)
+}
+
+function touchEnd(event){
+    endX = event.changedTouches[0]["screenX"]
+    console.log("touchEnd")
+    console.log(endX)
+    if(startX < endX){
+        calcClick()
+    }
+    else if(startX > endX){
+        menuClick()
+    }
+}
+
+let startX
+let endX
+document.querySelector("body").addEventListener("touchstart", touchStart)
+document.querySelector("body").addEventListener("touchend", touchEnd)
+
+
+function calcClick(){
+    if(curState == "menu"){
+        menu.classList.remove("show-to-left")
+        calculator.classList.remove("hide-to-left")
+        calculator.classList.add("show-to-right")
+        menu.classList.add("hide-to-right")
+        
+        curState = "calc"
+    }
+}
+
+function menuClick(){
+    if(curState == "calc"){
+        menu.classList.add("show-to-left")
+        calculator.classList.add("hide-to-left")
+        calculator.classList.remove("show-to-right")
+        menu.classList.remove("hide-to-right")
+
+        curState = "menu"
+    }
+}
+
+
+

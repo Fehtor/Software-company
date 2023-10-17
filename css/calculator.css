@@ -13,6 +13,8 @@
         justify-content: space-between;
         height: 5vw;
         width: 100%;
+        position: relative;
+        z-index: 100;
     }
 
     .calculate-place{
@@ -93,22 +95,31 @@
     } 
 
     .calculator{
-        /* display: none; */
         width: 90vw;
+        position: absolute;
+        top: 4vw;
+        left: 4vw;
+        transition-duration: 0.3s;
+        opacity: 1;
     }
 
-    .smth{
+    .menu{
         width: 90vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: absolute;
+        top: 4vw;
+        left: 14vw;
+        opacity: 0;
+        z-index: -1;
+        transition-duration: 0.3s;
     }
-    .calculator header{
-        height: 10%;
-    }
+    
 
-    .smth-main{
+    .menu-main{
+        margin-top: 20vw;
         height: 90%;
         display: flex;
         flex-direction: column;
@@ -133,7 +144,31 @@
         font-family: 'Montserrat', sans-serif;
     }
 
-    .smth{
-        display: none;
+    .show-to-right{
+        opacity: 1;
+        z-index: 1;
+        left: 4vw;
+        transition-duration: 0.3s;
+    }
+
+    .show-to-left{
+        transition-duration: 0.3s;
+        opacity: 1;
+        z-index: 1;
+        left: 4vw;
+    }
+
+    .hide-to-right{
+        transition-duration: 0.3s;
+        opacity: 0;
+        z-index: 0;
+        left: -6vw;
+    }
+
+    .hide-to-left{
+        transition-duration: 0.3s;
+        opacity: 0;
+        z-index: 0;
+        left: 14vw;
     }
 }
