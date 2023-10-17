@@ -93,7 +93,8 @@
     } 
 
     .calculator{
-        display: none;
+        /* display: none; */
+        width: 90vw;
     }
 
     .smth{
@@ -130,5 +131,9 @@
         margin: 0;
         font-size:  3vw;
         font-family: 'Montserrat', sans-serif;
+    }
+
+    .smth{
+        display: none;
     }
 }
